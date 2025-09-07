@@ -52,7 +52,18 @@ The effectiveness of this assistant is rooted in sophisticated prompt engineerin
     * **Ask Varied Questions:** Is instructed to ask new, distinct questions to broaden the assessment rather than getting stuck on a single topic.
 
 ---
+## 🧠 Challenges & Solutions
 
+Developing a robust conversational agent presented several interesting challenges, which were overcome with specific technical solutions:
+
+* **Challenge:** The application would freeze silently during API calls.
+    * **Solution:** Re-architected the app to use an asynchronous API client (`AsyncGroq`) to prevent blocking conflicts with Streamlit's event loop.
+
+* **Challenge:** Voice input was unreliable and would get stuck after one use.
+    * **Solution:** Solved a state management bug by implementing a dynamic key for the mic widget and integrated the `pydub` library for robust, self-contained audio format conversion.
+
+* **Challenge:** The AI interviewer would get stuck asking repetitive follow-up questions on a single topic.
+    * **Solution:** Enhanced the core LLM prompt with more sophisticated rules, instructing the AI to broaden the assessment by asking new, distinct questions on the same topic.
 ## 🛠️ Installation & Usage
 
 ### Prerequisites
