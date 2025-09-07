@@ -193,7 +193,7 @@ You are an AI Hiring Assistant. You have just collected the candidate's tech sta
 """
     return prompt
 
-# --- FINAL, UPGRADED ASSESSMENT PROMPTS ---
+# --- ASSESSMENT PROMPTS ---
 
 # prompts.py
 

@@ -14,7 +14,7 @@ from pydub import AudioSegment
 # Load environment variables at the very top
 load_dotenv()
 
-# --- FINAL IMPORTS ---
+# --- IMPORTS ---
 from prompts import (
     get_name_gathering_prompt, get_email_gathering_prompt, get_phone_gathering_prompt,
     get_experience_gathering_prompt, get_position_gathering_prompt,
@@ -104,7 +104,6 @@ with col2:
         reset_conversation()
         st.rerun()
 
-# **FIX: DECOUPLED INTRO AND GREETING LOGIC**
 # Show the intro card and first message ONLY on the very first run.
 if st.session_state.conversation_stage == "greeting":
     with st.container(border=False):
