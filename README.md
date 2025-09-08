@@ -8,6 +8,10 @@
 
 ---
 
+## Streamlit deployment
+https://ai-hiring-assistant-talentscout.streamlit.app/
+
+
 ## 📍 Project Overview
 
 TalentScout AI is a sophisticated chatbot designed to automate the initial screening phase of the recruitment process. Built for a fictional tech recruitment agency, this tool demonstrates a practical application of Large Language Models in a real-world business scenario. The assistant engages candidates in a natural, multi-stage conversation to gather essential information and conduct a tailored technical assessment based on their specific skills.
